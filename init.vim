@@ -9,8 +9,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'Yggdroot/indentLine'
 Plug 'nvim-treesitter/nvim-treesitter'
+
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 
 call plug#end()
@@ -102,6 +106,12 @@ require'nvim-treesitter.configs'.setup {
     },
 }
 EOF
+
+" telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " coc
 set signcolumn=yes
