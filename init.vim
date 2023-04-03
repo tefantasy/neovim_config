@@ -37,6 +37,7 @@ colorscheme codedark
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDAltDelims_c = 1
+let g:NERDCustomDelimiters = { 'python': { 'left': '#', 'right': '' } }
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
