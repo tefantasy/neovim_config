@@ -30,6 +30,9 @@ set nu
 nnoremap H 0
 nnoremap L $
 
+" cursor
+set guicursor=
+
 " vim-code-dark
 colorscheme codedark
 
